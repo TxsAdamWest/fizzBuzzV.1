@@ -27,12 +27,12 @@ var fizzbuzz = function(a,b,num) { //creating function, naming it Fizzbuzz. It w
         if (counter % a === 0 && counter % b === 0) {
             result = 'fizzbuzz'
         }
-        log(result)
+        console.log(result)
         // Conditions end //
     }
 
 
 }
 
-// Log whatever numbers you like! :]
-log(fizzbuzz(3,5,20))
+// console.log whatever numbers you like! :]
+console.log(fizzbuzz(3,5,20))
