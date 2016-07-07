@@ -1,5 +1,5 @@
-var fizzbuzz = function(num) { //creating function, naming it Fizzbuzz
-	var tempNum = num //Using a temporary variable to store input number
+var fizzbuzz = function(a,b,num) { //creating function, naming it Fizzbuzz
+    var tempNum = num //Using a temporary variable to store input number
     var result = '' //Creates the string based on its condition to log.
     var counter = 0 //Counts which iteration this function is currently on
     
@@ -7,25 +7,23 @@ var fizzbuzz = function(num) { //creating function, naming it Fizzbuzz
      
         counter += 1 // Adds 1 to count per round on the loop
 //         log(counter)
-		// Conditions start //
-        if (counter % 3 !== 0 && counter % 5 !== 0) { 
-        	result = counter
+        // Conditions start //
+        if (counter % a !== 0 && counter % b !== 0) { 
+            result = counter
         }
-        if (counter % 3 === 0) {
-    	    result = 'fizz'
+        if (counter % a === 0) {
+            result = 'fizz'
         }
-        if (counter % 5 === 0) {
+        if (counter % b === 0) {
             result = 'buzz'
         }
-    	if (counter % 3 === 0 && counter % 5 === 0) {
-        	result = 'fizzbuzz'
+        if (counter % a === 0 && counter % b === 0) {
+            result = 'fizzbuzz'
         }
-        
-        console.log(result)
+        log(result)
         // Conditions end //
     }
-//     return result // Return final result
 }
 
-//Log whatever number you like! :]
-console.log(fizzbuzz(20))
+// Log whatever numbers you like! :]
+log(fizzbuzz(3,5,20))
